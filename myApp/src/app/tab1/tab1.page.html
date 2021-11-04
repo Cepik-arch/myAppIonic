@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!--  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 1</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+
+  <!-- <app-explore-container name="Tab 1 page"></app-explore-container>-->
+  <h1>Ello World</h1>
+  <div class="ion-text-center">
+    <ion-icon name="heart" color="danger"></ion-icon>
+    <div>{{clickedNum}}</div>
+  </div>
+  <ion-card *ngFor="let car of cars; let i = index">
+    <ion-card-header>
+      <ion-card-subtitle>Car</ion-card-subtitle>
+      <ion-card-title>{{car}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      BRM brm
+    </ion-card-content>
+    <div class="ion-text-right">
+      <ion-button color="light" (click)="clickMe()">
+        <ion-icon name="heart" color="dark"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-card>
+
+</ion-content>

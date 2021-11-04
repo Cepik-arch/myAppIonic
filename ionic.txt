@@ -1,0 +1,1 @@
+set path=C:\Users\j_cepela\AppData\Roaming\npm;%path%
